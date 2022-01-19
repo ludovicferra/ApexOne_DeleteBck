@@ -45,7 +45,7 @@ function Remove-ApexOneBck {
                 $ListOfChoice = $BackupList | ForEach-Object { "$iList - $_"; $iList++ }
                 Clear-Host
                 Write-Host ("-" * 90)
-                "Liste de choix de sauvegardes" | ForEach-Object { $Side = ("=" * (((90 - $_.Length) /2) -1) ); Write-Host $side $_ $side }
+                "Liste des sauvegardes disponibles " | ForEach-Object { $Side = ("=" * (((90 - $_.Length) /2) -1) ); Write-Host $side $_ $side }
                 Write-Host ("-" * 90)
                 $ListOfChoice | Foreach-Object { Write-Host "|  $_" }
                 Write-Host ("-" * 90)
