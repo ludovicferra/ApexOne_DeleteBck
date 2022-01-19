@@ -1,5 +1,5 @@
 # ApexOne_DeleteBck
-Outil de suppression des backup de Trand Micro ApexOne server  
+Outil de suppression des backup de Trand Micro Apex One Server  
 ![Remove-ApexOneBck-Capture](https://github.com/ludovicferra/ApexOne_DeleteBck/raw/main/Remove-ApexOneBck-Capture.png)
 
 # Utilisation
