@@ -1,8 +1,14 @@
 # ApexOne_DeleteBck
-Outil de suppression des backup de Trand Micro Apex One Server  
+Au fur et à mesure des multiples mises à jour de Trendmicro Apex One,  
+le dossier de sauvegarde prend de l'espace disque (Environs 1.5Go par mise à jour).  
+Pour les versiond 'Apex One Server', Trendmicro ne fournit pas d'outil de suppression mais propose une suppression manuelle.  
+###### Sources : https://success.trendmicro.com/solution/1113979-files-that-can-be-deleted-to-free-up-the-disk-space-in-officescan
+### -----------------------------------------------------------------------------
+Outil de suppression des backups de Trend Micro Apex One Server  
+   
 ![Remove-ApexOneBck-Capture](https://github.com/ludovicferra/ApexOne_DeleteBck/raw/main/Remove-ApexOneBck-Capture.png)
 
-# Utilisation
+## Utilisation
 #### Depuis le serveur Apex One dans une console Powershell 'en tant qu'administrateur'
 ### Charger la fonction depuis GitHub directement :  
 Invoke-WebRequest "https://github.com/ludovicferra/ApexOne_DeleteBck/raw/main/Remove-ApexOneBackups-Console.ps1" -outfile "$Env:Temp\Get-VPNComputerInfo.ps1" ; Import-Module "$Env:Temp\Get-VPNComputerInfo.ps1"
