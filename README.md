@@ -12,8 +12,9 @@ Outil de suppression des backups de Trend Micro Apex One Server via PowerShell
 #### Depuis le serveur Apex One dans une console Powershell 'en tant qu'administrateur'
 ### Charger la fonction depuis GitHub directement :  
 ```PowerShell
-Invoke-WebRequest "https://github.com/ludovicferra/ApexOne_DeleteBck/raw/main/Remove-ApexOneBackups-Console.ps1" -outfile "$Env:Temp\Get-VPNComputerInfo.ps1"
-Import-Module "$Env:Temp\Get-VPNComputerInfo.ps1" -Force
+Invoke-WebRequest "https://raw.githubusercontent.com/ludovicferra/ApexOne_DeleteBck/main/Remove-ApexOneBackups-Console.ps1" -outfile "$Env:Temp\Remove-ApexOneBackups-Console.ps1"
+Unblock-File -Path "$Env:Temp\Remove-ApexOneBackups-Console.ps1" #Permet de débloquer le code non signé sans toucher aux règles par défaut.
+Import-Module "$Env:Temp\Remove-ApexOneBackups-Console.ps1" -Force
 ```
 ### Lancer le manuel de la fonction chargée :
 ```PowerShell
